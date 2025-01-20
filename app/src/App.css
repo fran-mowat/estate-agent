@@ -1,0 +1,469 @@
+:root{
+    --grey: #CCC;
+    --dark-grey: #999;
+    --dark-grey-highlight: #888;
+    --blue-pastel: #C4D8F3;
+    --blue: #007BFF;
+    --blue-highlight: #0067D6;
+    --blue-disabled: #013C7B;
+    --red: #DC3545;
+    --red-highlight: #BE2D3C;
+    --red-disabled: #871e28;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: auto; 
+}
+
+/* styles for home page title bar */
+
+.title-bar, .title-bar-property{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.title-image img{
+    width: 90px;
+}
+
+/* styles for home page search filters */
+
+form{
+    background-color: var(--blue-pastel);
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.search-filters{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+@media (min-width: 840px) {
+    .search-filters{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.widget-container{
+    margin: 5px 10px; 
+}
+
+form p{
+    margin: 5px;
+}
+
+.form-widget{
+    display: inline-block;
+    width: 80%;
+}
+
+.double-filter .form-widget{
+    width: 80%;
+}
+
+.double-filter>span{
+    padding: 10px;
+    display: inline-block;
+}
+
+@media (min-width: 470px) {
+    .double-filter .form-widget{
+        width: calc((80% - 26.406px) / 2);
+    }
+    
+    .double-filter>span{
+        padding: 10px;
+        display: inline-block;
+    }
+}
+
+form input[type="submit"], form input[type="reset"]{
+    width: 160px;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--blue-highlight);
+}
+
+form input[type="reset"]{
+    width: 120px;
+    background-color: var(--dark-grey);
+}
+
+form input[type="reset"]:hover{
+    background-color: var(--dark-grey-highlight);
+}
+
+/* styles for home page main content (properties and favourites) */
+
+.main-container{
+    margin: 0 10px 50px; 
+}
+
+.left-panel{
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (min-width: 1090px) {
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .left-panel{
+        width: 60%;
+    }
+}
+
+.property-list{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+@media ((min-width: 400px) and (max-width: 620px)) or ((min-width: 1090px) and (max-width: 1180px)){
+    .property-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media ((min-width: 620px) and (max-width: 1090px)) or (min-width: 1180px){
+    .property-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.property-card{
+    width: 100%;
+}
+
+.property-card, .favourite-property-card{
+    border: 1px solid var(--grey); 
+    border-radius: 5px;
+}
+
+.property-card img{
+    width: 100%; 
+    border-radius: 5px;
+}
+
+.property-text{
+    margin: 0 10px;
+}
+
+@media (max-width: 700px) {
+    .property-text p:nth-of-type(2), .property-text p:nth-of-type(3){
+        display: none;
+    }
+}
+
+.property-text h3{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.property-text a, .favourite-text a{
+    color: black; 
+    text-decoration: none;
+}
+
+.property-text p, .property-text div{
+    margin: 5px 0;
+}
+
+.property-icon-container *{
+    vertical-align: middle;
+}
+
+.property-card .icon, .favourite-property-card .icon, .icon{
+    width: 20px;
+    margin-right: 7px;
+    height: auto;
+}
+
+.bed-price-details div{
+    display: inline;
+}
+
+.bed-price-details div:first-of-type{
+    margin-right: 10px;
+}
+
+@media (min-width: 620px) {
+    .property-card .bed-price-details div{
+        display: block;
+    }
+    
+    .property-card .bed-price-details div:first-of-type{
+        margin-right: 0;
+    }
+}
+
+.property-card button{
+    margin: 10px;
+    width: calc(100% - 20px);
+    padding: 1px;
+    color: white;
+    border: none;
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+
+.property-card button:hover{
+    background-color: var(--blue-highlight);
+}
+
+.property-card button:disabled{
+    color: white;
+    background-color: var(--blue-disabled);
+    cursor: not-allowed;
+}
+
+.right-panel{
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (min-width: 1090px) {
+    .right-panel{
+        width: 40%;
+        margin-top: 16px;
+    }
+}
+
+.right-panel h2{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.right-panel>div>button{
+    margin-bottom: 10px;
+    background-color: var(--red);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 200px;
+}
+
+.right-panel>div>button:hover{
+    background-color: var(--red-highlight);
+}
+
+.right-panel>div>button:disabled{
+    background-color: var(--red-disabled);
+    cursor: not-allowed;
+}
+
+.favourite-property-card{
+    margin-bottom: 10px;
+}
+
+.favourite-property-details{
+    display: grid;
+    grid-template-columns: 135px auto;
+}
+
+.favourite-property-details img{
+    height: 125px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.favourite-text{
+    margin: 0 5px;
+}
+
+.favourite-text h3{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.favourite-property-card button{
+    border-radius: 5px; 
+    background-color: var(--dark-grey);
+    border: none;
+    color: white;
+    padding: 1px;
+    margin: 0 5px 5px;
+    width: 200px;
+}
+
+.favourite-property-card button:hover{
+    background-color: var(--dark-grey-highlight);
+}
+
+/* styles for property page title bar */
+
+.title-bar-property{
+    margin-bottom: 0;
+    justify-content: space-between;
+}
+
+.title-back{
+    align-content: center;
+}
+
+.title-bar-property .title-back img{
+    width: 25px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+}
+
+.title-bar-property a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title-bar-property a:hover{
+    color: var(--dark-grey-highlight);
+}
+
+.title-bar-property a:hover img{
+    filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(358deg) brightness(98%) contrast(92%);
+}
+
+.title-bar-property img{
+    width: 50px;
+}
+
+/* styles for property page image carousel */
+
+@media (min-width: 768px) {
+    .property-page-content{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.carousel-container{
+    width: calc(100% - 40px);
+    height: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px; 
+}
+
+@media (min-width: 768px) {
+    .carousel-container{
+        width: 40%;
+        margin: 20px 0 20px 20px; 
+    }
+}
+
+.carousel-wrapper{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-content-wrapper{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.left-arrow, .right-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: rgba(250, 250, 250, 0.7);
+    border: none;
+}
+
+.left-arrow {
+    left: 15px;
+}
+
+.right-arrow {
+    right: 15px;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    background-color: rgba(250, 250, 250, 0.8);
+}
+
+.carousel-content{
+    display: flex;
+    transition: all 250ms linear;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.carousel-content::-webkit-scrollbar, .carousel-content::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-content > *{
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+/* styles for property page text content */
+
+.property-page-text{
+    margin: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid var(--grey);
+}
+
+@media (min-width: 768px) {
+    .property-page-text{
+        width: 60%;
+    }
+}
+
+.property-page-text h2{
+    margin-bottom: 10px;
+}
+
+.property-page-text p, .property-page-text div{
+    margin: 5px 0;
+}
+
+.property-page-text p:last-of-type{
+    margin-bottom: 15px;
+}
+
+/* styles for property page tabs */
+
+.description-tab{
+    padding: 10px;
+}
+
+.floorplan-tab img{
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+}
+
+.map-tab iframe{
+    height: 350px;
+    padding: 5px 30px; 
+    width: 100%; 
+} 
+

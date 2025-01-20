@@ -1,0 +1,122 @@
+{
+	"properties": [
+        {
+            "id":"prop1",
+            "title": "Family home in Petts Wood",
+			"type":"House",
+            "bedrooms":3,
+			"price":"750,000",
+			"tenure":"Freehold",
+			"description":"Attractive three-bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises two receptions, a fitted kitchen, and a conservatory. The property also benefits from having a utility room and cloakroom. On the first floor, there are three bedrooms and a family bathroom with a separate toilet. Additional features include double glazing, central heating and a well-presented interior.",
+			"location":"Petts Wood Road, Orpington BR5",
+			"picture":"images/prop1/prop1_img1.png",
+			"url":"properties/prop1.html",
+            "added": {
+                "month":"October",
+                "day":12,
+                "year":2022
+            }
+        },
+		{
+            "id":"prop2",
+            "title": "Homey apartment in Orpington",
+			"type":"Flat",
+            "bedrooms":2,
+			"price":"399,995",
+			"tenure":"Freehold",
+			"description":"This flat contains two double bedrooms and two bathrooms. The modern fitted kitchen leads through to a homely living room, boasting solid wooden floors and a large window. Both bedrooms are double-sized, and the bathroom boasts a matching three-piece suite with a shower attachment over the bath. Being only five years old, this apartment is still under a ten-year building guarantee.",
+			"location":"Crofton Road, Orpington BR6",
+			"picture":"images/prop2/prop2_img1.png",
+			"url":"properties/prop2.html",
+            "added": {
+                "month":"September",
+                "day":14,
+                "year":2023
+            }
+        }, 
+        {
+            "id":"prop3",
+            "title": "Spacious apartment in Euston",
+			"type":"Flat",
+            "bedrooms":2,
+			"price":"1,350,000",
+			"tenure":"Leasehold",
+			"description":"Set on the 16th floor of the popular British Land development, this apartment offers a spacious dual-aspect reception room with floor-to-ceiling windows and access to a large balcony spanning the width of the reception room, offering exceptional views over the London skyline. The sizeable principal bedroom suite offers a Westerly aspect and has a built-in wardrobe and access to an en-suite bathroom. An additional bedroom with extensive wardrobe space, shower room and large storage cupboard are located off a welcoming hallway. Situated within easy reach of Regents Park and Marylebone, the building is excellently located for the tranquillity offered by the park's lakes and pathways and within easy reach of world-class dining venues & shopping locations.",
+			"location":"Triton Building, Euston NW1",
+			"picture":"images/prop3/prop3_img1.png",
+			"url":"properties/prop3.html",
+            "added": {
+                "month":"November",
+                "day":11,
+                "year":2024
+            }
+        }, 
+        {
+            "id":"prop4",
+            "title": "Elegant family home in Kensington",
+			"type":"House",
+            "bedrooms":5,
+			"price":"3,450,000",
+			"tenure":"Freehold",
+			"description":"Set over five storeys, each floor of this house is connected by an elegant, sweeping staircase. The ground floor reveals a welcoming entrance hall and sophisticated dining room, seamlessly flowing into a sleek, fully-fitted kitchen, which opens onto a serene private balcony. On the first floor, a magnificent dual-aspect reception room showcases towering ceilings over three meters high, grand windows that flood the space with natural light, intricate cornices, and rich wooden flooring, accompanied by an adjoining TV lounge for intimate gatherings. Ascend to the second floor, where the luxurious master suite occupies a full level, complete with a lavish ensuite bathroom and bespoke fitted wardrobes. The third floor offers three further generously sized bedrooms and a beautifully appointed family bathroom.",
+			"location":"Hogarth Road, Kensington SW5",
+			"picture":"images/prop4/prop4_img1.png",
+			"url":"properties/prop4.html",
+            "added": {
+                "month":"May",
+                "day":20,
+                "year":2024
+            }
+        }, 
+        {
+            "id":"prop5",
+            "title": "Cosy house in Abbey Wood",
+			"type":"House",
+            "bedrooms":3,
+			"price":"450,000",
+			"tenure":"Freehold",
+			"description":"Presenting a delightful three-bedroom mid-terrace period family home, offered with no forward chain and situated in the highly desirable Co-op Estate. This charming property provides a well-balanced layout, beginning on the ground floor with an inviting lounge and dining area that offers ample space for family relaxation and gatherings. The adjacent kitchen is practical and functional, designed with daily family life in mind. A well-appointed family bathroom with a four-piece suite adds comfort and convenience, ensuring all needs are met. Perfectly located just 0.4 miles from Abbey Wood Station, this home offers exceptional transport links ideal for swift connections across the city. Families will also appreciate proximity to Alexander McLeod Primary School, while nature lovers will enjoy easy access to Lesnes Abbey Woods and the historic ruins, adding a touch of scenic beauty to the area. This property is an excellent opportunity to own a well-connected, characterful home in a sought-after neighbourhood.",
+			"location":"Shieldhall Street, Abbey Wood SE2",
+			"picture":"images/prop5/prop5_img1.png",
+			"url":"properties/prop5.html",
+            "added": {
+                "month":"January",
+                "day":13,
+                "year":2024
+            }
+        }, 
+        {
+            "id":"prop6",
+            "title": "Modern apartment in Stratford",
+			"type":"Flat",
+            "bedrooms":1,
+			"price":"430,000",
+			"tenure":"Leasehold",
+			"description":"A spacious and modern 5th-floor double-bedroom apartment available in the iconic Stratosphere Tower, comprised of a double bedroom with built-in storage, a tiled family bathroom, a modern and fully fitted kitchen, and a large living room. Residents benefit from a 24-hour concierge service, private roof-top gymnasium and Wi-Fi lounge, and easy access to the world-renowned 2012 Olympic Park and Westfield shopping centre. With Stratford Station and Stratford International, a mere 0.1-mile walk, this apartment offers connections through TFL, Crossrail and National Rail.",
+			"location":"Great Eastern Road, Stratford E15",
+			"picture":"images/prop6/prop6_img1.png",
+			"url":"properties/prop6.html",
+            "added": {
+                "month":"October",
+                "day":30,
+                "year":2024
+            }
+        }, 
+        {
+            "id":"prop7",
+            "title": "Extravagant house in Crouch End",
+			"type":"House",
+            "bedrooms":6,
+			"price":"1,750,000",
+			"tenure":"Freehold",
+			"description":"An exceptional six-bedroom Victorian detached house that perfectly blends period character with contemporary style. The ground floor features two elegant reception rooms, showcasing original period details such as ceiling roses, original fireplaces, and reclaimed wooden floorboards that continue throughout the home. The heart of the house is a stunning kitchen-diner, fitted with a bespoke Devol kitchen and opening through steel-framed doors to a South-Westerly garden. On the first floor, there is a modern fitted family bathroom and four bedrooms, including one with a built-in wardrobe. On the top floor, there are two bedrooms, one with an en-suite and the other with a Juliette balcony offering an impressive view of Alexandra Palace.",
+			"location":"Ferme Park Road, Crouch End N8",
+			"picture":"images/prop7/prop7_img1.png",
+			"url":"properties/prop7.html",
+            "added": {
+                "month":"November",
+                "day":22,
+                "year":2024
+            }
+        }
+]}
